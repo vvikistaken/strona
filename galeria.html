@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CMI</title>
     <link rel="stylesheet" href="style/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
     <body>
         <div id="header">
@@ -20,9 +21,34 @@
         </div>
         <div id="content">
             <h2>Galeria</h2>
+            <div id="galeria">
+                <img src="image/img1 1.jpg" id="galeriaImg1">
+                <img src="image/img1 2.jpg" id="galeriaImg1">
+            </div>
         </div>
         <div id="footer">
 
         </div>
+
+        <script>
+            $(document).ready(function(){
+                $("[id=galeriaImg1]").mouseenter(function(){
+                    $(this).animate({
+                        opacity: 1,
+                        width: "+=50",
+                        height: "+=50",
+                        margin: "-=25"
+                    }, 500);
+                });
+                $("[id=galeriaImg1]").mouseleave(function(){
+                    $(this).animate({
+                        opacity: 0.6,
+                        width: "-=50",
+                        height: "-=50",
+                        margin: "+=25"
+                    }, 500);
+                });
+            });
+        </script>
     </body>
 </html>
