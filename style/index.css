@@ -5,20 +5,25 @@ body{
     background-color:rgb(250,250,250);
 }
 #header{
-    background-color:rgb(51, 201, 255);
-    border: 2px solid rgb(20, 174, 230);
+    
     width:100%;
     height:200px;
     margin:auto;
     font-size: 20px;
-    font-family: arial;
-    color: white;
+    border-radius: 25px;
+   
+        border: 1px solid #245324;
+        background-image: linear-gradient(to right, rgba(130, 44, 44, 0), rgb(51, 201, 255));
+    
+       
 }
+
 #menu{
-    background-color:rgb(250,250,250);
-    border: 2px solid gainsboro;
+    background-color: white;
+    border: 2px solid white;
     width:100%;
     height:50px;
+   
 }
 #menu ul{
     float:left;
@@ -45,9 +50,10 @@ body{
 }
 #content{
     background-color:rgb(51, 201, 255);
-    border: 2px solid rgb(20, 174, 230);
+    border: 1px solid black;
+    
     width:100%;
-    min-height:500px;
+    height: auto;
     font-family: arial;
     color: white;
 }
@@ -56,10 +62,12 @@ body{
     margin:auto;
 }
 #footer{
-    background-color:rgb(250,250,250);
-    border: 2px solid gainsboro;
+    background-color:rgb(51, 201, 255);
+    border: 1px solid black;
     width:100%;
-    height: 75px;
+    height: 50px;
+    color: white;
+    text-align: center;
 }
 #logo{
     width: 150px;
